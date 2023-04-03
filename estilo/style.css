@@ -23,53 +23,20 @@ body {
     gap: 30px;
 }
 
-#container-do-icone {
+ #container-do-icone {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
 }
 
-#container-do-icone img {
-    margin-left: 80vw;
-    /* margin-left: 50.5em; */
+.icon-flutuante {
+    position: relative;
+}
+
+.icon-flutuante a > img {
+    position: absolute;
+    left: 80vw;
+    right: auto;
     width: 80px;
     height: 80px;
-}
-
-#container-da-chamada {
-    margin-top: 2.3em;
-    /* margin-left: 45.5em; */
-    margin-left: 70vw;
-}
-
-#container-da-chamada a {
-    display: none;
-}
-
-.icone {
-    cursor: pointer;
-    margin-left: 70em;
-    width: 50px;
-    height: 50px;
-
-    /* width: 90px;
-    height: 90px; */
-}
-
-#container-da-chamada a {
-    font-family: monospace, Courier New, Lucida Console;
-    font-size: 1.5em;
-    text-decoration: none;
-    background-color: #009e02;
-    border-radius: 20px;
-    padding: 7px;
-    color: #ffffff;
-}
-
-#container-da-chamada a:hover {
-    background-color: #008000;
 }
 
 .container h1 {
@@ -86,9 +53,6 @@ body {
     box-shadow: 0 0 10px #00ff00;
     width: 50px;
     height: 50px;
-
-    /* width: 150px;
-    height: 150px; */
 }
       
 .marketing {
@@ -106,18 +70,13 @@ body {
 }
 
 .buttons {
-    margin-top: 50px;
-    margin-bottom: 50px;
-
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 30px;
-
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 button {
@@ -196,7 +155,7 @@ article > p {
 
 .text3 {
     font-size: 50px;
-    color: red;
+    color: #ff0000;
     padding: 10px 10px;
     font-family: monospace, Courier New, Lucida Console;
     font-weight: bold;
@@ -306,16 +265,18 @@ article > p {
     justify-content: center;
     align-items: flex-end;
     flex-direction: row;
-    position: relative;
+    /* position: relative; */
+    margin-right: 16px;
+    margin-top: 30em;
 }
 
-#planos .button-selecionar > button {
-    position: absolute;
+#planos .button-selecionar button {
+    /* position: absolute; */
     width: 200px;
     height: 80px;
     border-radius: 0px 0px 20px 20px;
     background-color: #20bd04;
-    right: 30px;
+    /* right: 30px; */
 }
 
 #planos .texto p {
@@ -383,29 +344,10 @@ footer a {
 
     /* Adaptação para Tablets */
  @media screen and (min-width: 768px) and (max-width: 992px) {
-    
-    #container-do-icone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
 
     #container-do-icone img {
-        margin-left: 80vw;
-        /* margin-left: 50.5em; */
         width: 80px;
         height: 80px;
-    }
-
-    #container-da-chamada {
-        margin-top: 2.3em;
-        /* margin-left: 45.5em; */
-        margin-left: 70vw;
-    }
-
-    #container-da-chamada a {
-        display: none;
     }
     
     .buttons {
@@ -420,27 +362,9 @@ footer a {
  /* Adaptação para Computadores */
  @media screen and (min-width: 992px) and (max-width: 1200px) {
 
-    #container-do-icone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
     #container-do-icone img {
-        margin-left: 70vw;
-        /* margin-left: 50.5em; */
         width: 80px;
         height: 80px;
-    }
-
-    #container-da-chamada {
-        /* margin-left: 45.5em; */
-        margin-left: 70vw;
-    }
-
-    #container-da-chamada a {
-        display: block;
     }
     
     .buttons {
@@ -455,29 +379,6 @@ footer a {
 
   /* Adaptação para telas grandes (Tv) */
  @media screen and (min-width: 1200px) {
-    
-    #container-do-icone {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    #container-do-icone img {
-        margin-left: 70vw;
-        /* margin-left: 65.5em; */
-    }
-
-    #container-da-chamada {
-        margin-top: 2.3em;
-        margin-left: 70vw;
-        /* margin-left: 67.5em; */
-    }
-
-    #container-da-chamada a {
-        display: block;
-        padding: 15px;
-    }
 
     #container-do-icone img {
         width: 100px;
@@ -492,4 +393,4 @@ footer a {
         width: 150px;
         height: 150px;
     }
- }
+}
