@@ -127,8 +127,8 @@ article > p {
     align-items: center;
 }
   
-.artigo > p {
-      font-size: 50px;
+.artigo > h2 {
+      font-size: 45px;
       font-family: 'Roboto', sans-serif;
       color: #ffffff;
       margin-top: 1.5em;
@@ -339,7 +339,7 @@ footer a {
     color: #008000;
 }
 
-    /* Adaptação para Tablets */
+    /* Adaptação para Tablets (Completa!) */
  @media screen and (min-width: 768px) and (max-width: 992px) {
 
     #container-do-icone img {
@@ -354,6 +354,31 @@ footer a {
     .container img {
         width: 120px;
         height: 120px;
+    }
+
+    .artigo img {
+        width: 500px;
+    }
+
+    .artigo p {
+        font-size: 1.6em;
+    }
+
+    #sobre p {
+        font-size: 1.6em;
+    }
+
+    #container-sobre {
+        margin-top: 2em;
+    }
+
+    #container-sobre h2 {
+        margin-top: -5px;
+    }
+
+    #container-sobre img {
+        width: 90px;
+        height: 90px;
     }
  }
  /* Adaptação para Computadores */
