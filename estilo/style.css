@@ -1,5 +1,3 @@
-/* Esse código base é a adaptação para versão mobile por se tratar da técnica mobile first */
-
 @charset "UTF-8";
 
 * {
@@ -8,7 +6,6 @@
     box-sizing: border-box;
 }
 
-/* Fontes que vamos usar */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 body {
@@ -23,29 +20,6 @@ body {
     gap: 30px;
 }
 
- #container-do-icone {
-    position: fixed;
-}
-
-.icon-flutuante {
-    position: relative;
-}
-
-.icon-flutuante a > img {
-    position: absolute;
-    left: 80vw;
-    right: auto;
-    width: 80px;
-    height: 80px;
-}
-
-.container h1 {
-    font-family: monospace, Courier New, Lucida Console;
-    padding: 40px;
-    display: inline-block;
-    vertical-align: middle;
-}
-      
 .img {
     display: inline-block;
     overflow: hidden;
@@ -54,7 +28,14 @@ body {
     width: 50px;
     height: 50px;
 }
-      
+
+.container h1 {
+    font-family: monospace, Courier New, Lucida Console;
+    padding: 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .marketing {
     font-size: 40px;
     color: #ffffff;
@@ -87,7 +68,6 @@ button {
     border: 5px solid #008000;
     background-color: #ffffff;
     color: #000000;
-    /* Efeitos para dar acabamento */
     transition: .4s;
     cursor: pointer;
 }
@@ -107,33 +87,20 @@ button:hover {
     text-align: center;
 }
 
-/* Alteração para flex-box */
-.ep {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+ #container-do-icone {
+    position: fixed;
 }
-  
-.ep > p {
-      font-size: 50px;
-      font-family: 'Roboto', sans-serif;
-      color: #ffffff;
-      margin-top: 1.5em;
-      margin-bottom: 1.5em;
-  }
-  
-.pe {
-      font-size: 50px;
-      color: #fff100;
-      padding: 10px 10px;
-      font-family: monospace, Courier New, Lucida Console;
-      font-weight: bold;
-  }
 
-.img-1 {
-    border-radius: 20px;
-    box-shadow: 0 0 10px #00ff00;
+.icon-flutuante {
+    position: relative;
+}
+
+.icon-flutuante a > img {
+    position: absolute;
+    left: 80vw;
+    right: auto;
+    width: 80px;
+    height: 80px;
 }
 
 article {
@@ -153,6 +120,29 @@ article > p {
     font-family: 'Roboto', sans-serif;
 }
 
+.artigo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.artigo > p {
+      font-size: 50px;
+      font-family: 'Roboto', sans-serif;
+      color: #ffffff;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+}
+  
+.text2 {
+    font-size: 50px;
+    color: #fff100;
+    padding: 10px 10px;
+    font-family: monospace, Courier New, Lucida Console;
+    font-weight: bold;
+}
+
 .text3 {
     font-size: 50px;
     color: #ff0000;
@@ -161,12 +151,18 @@ article > p {
     font-weight: bold;
 }
 
+.img-1 {
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
 .img-2 {
   border-radius: 20px;
   box-shadow: 0 0 10px #00ff00;
   width: 750px;
   height: auto;
 }
+
 .text4 {
     font-size: 50px;
     color: #ffc700;
@@ -181,6 +177,13 @@ article > p {
     padding: 10px 10px;
     font-family: monospace, Courier New, Lucida Console;
     font-weight: bold;
+}
+
+#sobre article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #container-sobre {
@@ -198,14 +201,7 @@ article > p {
     width: 150px;
 }
 
-#sobre article {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-#sobre .sobre {
+#sobre h2 {
     font-size: 50px;
     color: #00ff03;
     font-family: monospace, Courier New, Lucida Console;
@@ -213,7 +209,8 @@ article > p {
     text-align: center;
     margin-top: 30px;
 }
-#sobre .p {
+
+#sobre p {
     font-size: 30px;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
@@ -221,15 +218,10 @@ article > p {
     text-align: center;
 }
 
-#combos .sobre {
-    font-size: 3em;
+#combos h2 {
+    font-size: 4em;
     font-weight: bold;
     font-family: monospace, Courier New, Lucida Console;
-}
-
-#combos .combo, .sobre {
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
     color: #26ff00;
     margin-bottom: .5em;
     text-align: center;
@@ -243,11 +235,26 @@ article > p {
     flex-direction: column;
 }
 
+#combos p {
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    color: #26ff00;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
 #planos {
     margin-top: 1.5em;
     display: flex;
     flex-direction: row;
     gap: 30px;
+}
+
+#planos .plano {
+    background-color: #188105;
+    width: 200px;
+    height: 600px;
+    border-radius: 20px;
 }
 
 #planos .texto {
@@ -265,18 +272,15 @@ article > p {
     justify-content: center;
     align-items: flex-end;
     flex-direction: row;
-    /* position: relative; */
-    margin-right: 16px;
+    margin-right: 15px;
     margin-top: 30em;
 }
 
 #planos .button-selecionar button {
-    /* position: absolute; */
     width: 200px;
     height: 80px;
     border-radius: 0px 0px 20px 20px;
     background-color: #20bd04;
-    /* right: 30px; */
 }
 
 #planos .texto p {
@@ -284,13 +288,6 @@ article > p {
     color: #ffffff;
     text-align: center;
     font-family: monospace, Courier New, Lucida Console;
-}
-
-#planos .plano {
-    background-color: #188105;
-    width: 200px;
-    height: 600px;
-    border-radius: 20px;
 }
 
 #parcerias h2 {
@@ -314,7 +311,7 @@ article > p {
     box-shadow: 0 0 10px #00ff00;
 }
 
-.empresas div {
+.empresas .empresa {
     width: 100px;
     height: 100px;
     background-color: #009e02;
