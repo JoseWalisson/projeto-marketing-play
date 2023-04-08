@@ -10,6 +10,7 @@
 
 body {
     background-color: #000000;
+    overflow-x: hidden;
 }
 
 .container {
@@ -17,33 +18,30 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 30px;
 }
 
 .img {
-    display: inline-block;
-    overflow: hidden;
     border-radius: 50%;
     box-shadow: 0 0 10px #00ff00;
-    width: 50px;
-    height: 50px;
+    width: 100px;
+    height: 100px;
 }
 
 .container h1 {
     font-family: monospace, Courier New, Lucida Console;
     padding: 40px;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .marketing {
-    font-size: 40px;
+    font-size: 25px;
     color: #ffffff;
     text-shadow: 0 0 10px #00ff00;
     border-radius: 80px;
     background-color: #386a2c;
 }
-      
+
 .destaque {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight: bold;
@@ -61,34 +59,28 @@ body {
 }
 
 button {
+    width: 60vw;
     font-size: 24px;
     padding: 20px 40px;
     margin-left: 15px;
     border-radius: 45px;
-    border: 5px solid #008000;
-    background-color: #ffffff;
-    color: #000000;
-    transition: .4s;
+    background-color: #009e02;
+    color: #eaffeace;
+    border: 5px solid #66ff55;
     cursor: pointer;
 }
 
-button:hover {
-    transition: .5s;
-    background-color: #009e02;
-    color: #eaffea;
-    border: 5px solid #66ff55;
-}
-
 .text-intro {
-    font-size: 30px;
+    font-size: 20px;
     font-family: 'Roboto', sans-serif;
     color: #11ff00;
     margin: 1.5em;
     text-align: center;
 }
 
- #container-do-icone {
+#container-do-icone {
     position: fixed;
+    z-index: 1;
 }
 
 .icon-flutuante {
@@ -97,7 +89,7 @@ button:hover {
 
 .icon-flutuante a > img {
     position: absolute;
-    left: 80vw;
+    left: 70vw;
     right: auto;
     width: 80px;
     height: 80px;
@@ -109,9 +101,15 @@ article {
     justify-content: center;
 }
 
+.artigo img {
+    width: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #00ff00;
+}
+
 article > p {
     color: #ffffff;
-    font-size: 1.5em;
+    font-size: 1.3em;
     text-align: center;
     width: 75%;
     line-height: 1.5em;
@@ -126,17 +124,18 @@ article > p {
     flex-direction: column;
     align-items: center;
 }
-  
+
 .artigo > h2 {
-      font-size: 45px;
-      font-family: 'Roboto', sans-serif;
-      color: #ffffff;
-      margin-top: 1.5em;
-      margin-bottom: 1.5em;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
-  
+
 .text2 {
-    font-size: 50px;
+    font-size: 30px;
     color: #fff100;
     padding: 10px 10px;
     font-family: monospace, Courier New, Lucida Console;
@@ -144,27 +143,15 @@ article > p {
 }
 
 .text3 {
-    font-size: 50px;
+    font-size: 30px;
     color: #ff0000;
     padding: 10px 10px;
     font-family: monospace, Courier New, Lucida Console;
     font-weight: bold;
 }
 
-.img-1 {
-    border-radius: 20px;
-    box-shadow: 0 0 10px #00ff00;
-}
-
-.img-2 {
-  border-radius: 20px;
-  box-shadow: 0 0 10px #00ff00;
-  width: 750px;
-  height: auto;
-}
-
 .text4 {
-    font-size: 50px;
+    font-size: 30px;
     color: #ffc700;
     padding: 10px 10px;
     font-family: monospace, Courier New, Lucida Console;
@@ -172,7 +159,7 @@ article > p {
 }
 
 .text5 {
-    font-size: 50px;
+    font-size: 30px;
     color: #a4ff00;
     padding: 10px 10px;
     font-family: monospace, Courier New, Lucida Console;
@@ -187,6 +174,7 @@ article > p {
 }
 
 #container-sobre {
+    margin-top: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,10 +183,11 @@ article > p {
 }
 
 #container-sobre img {
+    display: none;
     box-shadow: 0 0 10px #00ff00;
     border-radius: 50%;
-    width: 150px;
-    width: 150px;
+    width: 90px;
+    width: 90px;
 }
 
 #sobre h2 {
@@ -211,7 +200,7 @@ article > p {
 }
 
 #sobre p {
-    font-size: 30px;
+    font-size: 1.3em;
     font-family: 'Roboto', sans-serif;
     color: #ffffff;
     margin-bottom: 1.5em;
@@ -246,8 +235,8 @@ article > p {
 #planos {
     margin-top: 1.5em;
     display: flex;
-    flex-direction: row;
-    gap: 30px;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #planos .plano {
@@ -268,26 +257,37 @@ article > p {
 }
 
 #planos .button-selecionar {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: flex-end;
     flex-direction: row;
-    margin-right: 15px;
-    margin-top: 30em;
 }
 
-#planos .button-selecionar button {
+#planos .button-selecionar > button {
+    position: absolute;
+    right: 0px;
     width: 200px;
     height: 80px;
     border-radius: 0px 0px 20px 20px;
     background-color: #20bd04;
+    color: #eaffeace;
 }
 
 #planos .texto p {
+    padding-top: 10px;
     font-size: 2em;
     color: #ffffff;
     text-align: center;
     font-family: monospace, Courier New, Lucida Console;
+}
+
+#parcerias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
 }
 
 #parcerias h2 {
@@ -303,6 +303,7 @@ article > p {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 30px;
     background-color: gray;
     padding: 50px;
@@ -339,16 +340,32 @@ footer a {
     color: #008000;
 }
 
-    /* Adaptação para Tablets (Completa!) */
  @media screen and (min-width: 768px) and (max-width: 992px) {
 
+    .container {
+        flex-direction: row;
+    }
+
     #container-do-icone img {
+        display: flex;
         width: 80px;
         height: 80px;
     }
     
     .buttons {
         flex-direction: row;
+    }
+
+    button {
+        width: auto;
+    }
+
+    .text-intro {
+        font-size: 30px;
+    }
+
+    .icon-flutuante a > img {
+        left: 80vw;
     }
 
     .container img {
@@ -361,15 +378,41 @@ footer a {
     }
 
     .artigo p {
-        font-size: 1.6em;
+        width: 70vw;
+        font-size: 2em;
+    }
+
+    .artigo > h2 {
+        font-size: 45px;
+    }
+
+    .text2 {
+        font-size: 50px;
+    }
+
+    .text3 {
+        font-size: 50px;
+    }
+
+    .text4 {
+        font-size: 50px;
+    }
+
+    .text5 {
+        font-size: 50px;
     }
 
     #sobre p {
-        font-size: 1.6em;
+        width: 75vw;
+        font-size: 2em;
+    }
+    
+    #sobre {
+        margin-top: 2em;
     }
 
-    #container-sobre {
-        margin-top: 2em;
+    .marketing {
+        font-size: 40px;
     }
 
     #container-sobre h2 {
@@ -377,14 +420,50 @@ footer a {
     }
 
     #container-sobre img {
+        display: flex;
         width: 90px;
         height: 90px;
     }
+
+    #planos {
+        flex-direction: row;
+    }
+
+    #planos .button-selecionar {
+        right: 30px;
+    }
+
+    #planos .plano {
+        width: 200px;
+    }
+
+    #planos .texto {
+        width: 200px;
+    }
+
+    #planos .button-selecionar > button {
+        width: 200px;
+        right: -10px;
+    }
+
+    #parcerias .empresas {
+        flex-direction: row;
+    }
+
+    .empresas {
+        width: 80vw;
+    }
+
  }
- /* Adaptação para Computadores */
+
  @media screen and (min-width: 992px) and (max-width: 1200px) {
 
+    .container {
+        flex-direction: row;
+    }
+
     #container-do-icone img {
+        display: flex;
         width: 80px;
         height: 80px;
     }
@@ -393,26 +472,240 @@ footer a {
         flex-direction: row;
     }
 
-    .container img {
-        width: 150px;
-        height: 150px;
+    button {
+        width: auto;
+        border: 5px solid #008000;
+        background-color: #ffffff;
+        color: #000000;
     }
- }
 
-  /* Adaptação para telas grandes (Tv) */
- @media screen and (min-width: 1200px) {
+    button:hover {
+        background-color: #009e02;
+        color: #eaffea;
+        border: 5px solid #66ff55;
+        transition: .5s;
+    }
 
-    #container-do-icone img {
+    .text-intro {
+        font-size: 30px;
+    }
+
+    .icon-flutuante a > img {
+        left: 80vw;
+    }
+
+    .container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .artigo img {
+        width: 500px;
+    }
+
+    .artigo p {
+        width: 70vw;
+        font-size: 2.5em;
+    }
+
+    .artigo > h2 {
+        font-size: 45px;
+    }
+
+    .text2 {
+        font-size: 50px;
+    }
+
+    .text3 {
+        font-size: 50px;
+    }
+
+    .text4 {
+        font-size: 50px;
+    }
+
+    .text5 {
+        font-size: 50px;
+    }
+
+    #sobre p {
+        width: 75vw;
+        font-size: 2.5em;
+    }
+    
+    #sobre {
+        margin-top: 2em;
+    }
+
+    .marketing {
+        font-size: 40px;
+    }
+
+    #container-sobre h2 {
+        margin-top: -5px;
+        font-size: 4em;
+    }
+
+    #container-sobre img {
+        display: flex;
         width: 100px;
         height: 100px;
     }
 
+    #planos {
+        flex-direction: row;
+    }
+
+    #planos .button-selecionar {
+        right: 30px;
+    }
+
+    #planos .plano {
+        width: 200px;
+    }
+
+    #planos .texto {
+        width: 200px;
+    }
+
+    #planos .button-selecionar > button {
+        width: 200px;
+        right: -10px;
+    }
+
+    #parcerias .empresas {
+        flex-direction: row;
+    }
+
+    .empresas {
+        width: 80vw;
+    }
+
+ }
+
+ @media screen and (min-width: 1200px) {
+
+    .container {
+        flex-direction: row;
+    }
+
+    #container-do-icone img {
+        display: flex;
+        width: 80px;
+        height: 80px;
+    }
+    
     .buttons {
         flex-direction: row;
     }
 
-    .img {
-        width: 150px;
-        height: 150px;
+    button {
+        width: auto;
+        border: 5px solid #008000;
+        background-color: #ffffff;
+        color: #000000;
     }
+
+    button:hover {
+        background-color: #009e02;
+        color: #eaffea;
+        border: 5px solid #66ff55;
+        transition: .5s;
+    }
+
+    .text-intro {
+        font-size: 30px;
+    }
+
+    .icon-flutuante a > img {
+        left: 80vw;
+    }
+
+    .container img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .artigo img {
+        width: 500px;
+    }
+
+    .artigo p {
+        width: 70vw;
+        font-size: 2.8em;
+    }
+
+    .artigo > h2 {
+        font-size: 45px;
+    }
+
+    .text2 {
+        font-size: 50px;
+    }
+
+    .text3 {
+        font-size: 50px;
+    }
+
+    .text4 {
+        font-size: 50px;
+    }
+
+    .text5 {
+        font-size: 50px;
+    }
+
+    #sobre {
+        margin-top: 3em;
+    }
+
+    #sobre p {
+        width: 75vw;
+        font-size: 2.8em;
+    }
+    
+    .marketing {
+        font-size: 40px;
+    }
+
+    #container-sobre h2 {
+        margin-top: -5px;
+        font-size: 4em;
+    }
+
+    #container-sobre img {
+        display: flex;
+        width: 120px;
+        height: 120px;
+    }
+
+    #planos {
+        flex-direction: row;
+    }
+
+    #planos .button-selecionar {
+        right: 30px;
+    }
+
+    #planos .plano {
+        width: 200px;
+    }
+
+    #planos .texto {
+        width: 200px;
+    }
+
+    #planos .button-selecionar > button {
+        width: 200px;
+        right: -10px;
+    }
+
+    #parcerias .empresas {
+        flex-direction: row;
+    }
+
+    .empresas {
+        width: 80vw;
+    }
+
 }
