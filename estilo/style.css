@@ -378,6 +378,7 @@ footer a {
     }
 
     button {
+        display: block;
         width: auto;
     }
 
@@ -499,6 +500,7 @@ footer a {
     }
 
     button {
+        display: block;
         width: auto;
         border: 5px solid #008000;
         background-color: #ffffff;
@@ -631,6 +633,7 @@ footer a {
     }
 
     button {
+        display: block;
         width: auto;
         border: 5px solid #008000;
         background-color: #ffffff;
