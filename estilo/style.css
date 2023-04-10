@@ -22,6 +22,17 @@ body {
     gap: 30px;
 }
 
+#icon-container {
+    position: relative;
+}
+
+#icon-container > span {
+    position: absolute;
+    color: #ffffff;
+    font-size: 2em;
+    left: 33vw;
+}
+
 .img {
     border-radius: 50%;
     box-shadow: 0 0 10px #00ff00;
@@ -58,7 +69,12 @@ body {
     margin-bottom: 50px;
 }
 
+.buttons a {
+    text-decoration: none;
+}
+
 button {
+    display: none;
     width: 60vw;
     font-size: 24px;
     padding: 20px 40px;
@@ -90,6 +106,7 @@ button {
 .icon-flutuante a > img {
     position: absolute;
     left: 70vw;
+    bottom: 5vw;
     right: auto;
     width: 80px;
     height: 80px;
@@ -346,6 +363,10 @@ footer a {
         flex-direction: row;
     }
 
+    #icon-container {
+        display: none;
+    }
+
     #container-do-icone img {
         display: flex;
         width: 80px;
@@ -366,6 +387,7 @@ footer a {
 
     .icon-flutuante a > img {
         left: 80vw;
+        bottom: -5vw;
     }
 
     .container img {
@@ -462,6 +484,10 @@ footer a {
         flex-direction: row;
     }
 
+    #icon-container {
+        display: none;
+    }
+
     #container-do-icone img {
         display: flex;
         width: 80px;
@@ -492,6 +518,7 @@ footer a {
 
     .icon-flutuante a > img {
         left: 80vw;
+        bottom: -5vw;
     }
 
     .container img {
@@ -589,6 +616,10 @@ footer a {
         flex-direction: row;
     }
 
+    #icon-container {
+        display: none;
+    }
+
     #container-do-icone img {
         display: flex;
         width: 80px;
@@ -619,6 +650,7 @@ footer a {
 
     .icon-flutuante a > img {
         left: 80vw;
+        bottom: -5vw;
     }
 
     .container img {
