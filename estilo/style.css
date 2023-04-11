@@ -19,6 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 90px;
     gap: 30px;
 }
 
@@ -30,6 +31,14 @@ body {
     position: absolute;
     color: #ffffff;
     font-size: 2em;
+    left: 33vw;
+}
+
+#icon-container > .fechar > span {
+    display: none;
+    position: absolute;
+    font-size: 2em;
+    color: #ffffff;
     left: 33vw;
 }
 
@@ -60,13 +69,17 @@ body {
 }
 
 .buttons {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    z-index: 1;
+    /* padding: 30px; */
+    margin: -50px 30px 30px 30px;
+    /* background-color: #808080ce; */
     gap: 30px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    border-radius: 30px;
 }
 
 .buttons a {
@@ -108,8 +121,8 @@ button {
     left: 70vw;
     bottom: 5vw;
     right: auto;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
 }
 
 article {
@@ -282,6 +295,7 @@ article > p {
 }
 
 #planos .button-selecionar > button {
+    display: block;
     position: absolute;
     right: 0px;
     width: 200px;
@@ -365,6 +379,10 @@ footer a {
 
     #icon-container {
         display: none;
+    }
+
+    #icon-container > .fechar > span {
+        display: block;
     }
 
     #container-do-icone img {
@@ -487,6 +505,10 @@ footer a {
 
     #icon-container {
         display: none;
+    }
+
+    #icon-container > .fechar > span {
+        display: block;
     }
 
     #container-do-icone img {
@@ -620,6 +642,10 @@ footer a {
 
     #icon-container {
         display: none;
+    }
+
+    #icon-container > .fechar > span {
+        display: block;
     }
 
     #container-do-icone img {
