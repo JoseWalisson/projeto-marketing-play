@@ -1,4 +1,3 @@
-// Fecha e abre o menu
 document.addEventListener('DOMContentLoaded', function() {
   const menu = document.querySelector('#icon-container');
   const buttons = document.querySelectorAll('.buttons button');
